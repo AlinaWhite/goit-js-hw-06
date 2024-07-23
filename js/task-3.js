@@ -2,9 +2,8 @@ class StringBuilder {
      static #value = [];
 
     constructor (initialValue) {
-        this.initialValue = initialValue;
-        StringBuilder.#value.push(initialValue);
-
+        StringBuilder.#value = initialValue;
+        
     }
 
     getValue() {
