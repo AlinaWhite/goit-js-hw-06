@@ -1,25 +1,25 @@
 class StringBuilder {
-     static #value = [];
+     #value;
 
     constructor (initialValue) {
-        StringBuilder.#value = initialValue;
+        this.#value = initialValue || '';
         
     }
 
     getValue() {
-        return StringBuilder.#value;
+        return this.#value;
     }
 
     padEnd(str) {
-        StringBuilder.#value += str;
+        this.#value += str;
     }
 
     padStart(str) {
-        StringBuilder.#value = str + StringBuilder.#value;
+        this.#value = str + this.#value;
     }
 
     padBoth(str) {
-        StringBuilder.#value = str + StringBuilder.#value + str;
+        this.#value = str + this.#value + str;
     }
 }
 
